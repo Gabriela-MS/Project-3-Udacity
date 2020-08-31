@@ -1,6 +1,3 @@
-//Final file of Pixel Art Maker
-
-
 function makeGrid() {
 //Better cleaning the canvas before anything
   $('#pixelCanvas').children().remove();
@@ -13,12 +10,12 @@ function makeGrid() {
   var table = $("#pixelCanvas");
 
 // Loop to build grid
-//Info on the row  (still "fuzzy") at http://index-of.es/JS/Powers%20Sh.%20-%20JavaScript.Cookbook%20-%202010.pdf
+//This is still "fuzzy" check http://index-of.es/JS/Powers%20Sh.%20-%20JavaScript.Cookbook%20-%202010.pdf
 // Remember: 'i' & 'j' are the generic "counting variables"
     for (var i = 0; i < height; i++) {
-      $('#pixelCanvas').append(`<tr id='row${i}'></tr>`);
+      $('#pixelCanvas').append(`<tr id='width${i}'></tr>`);
       for (var j = 0; j < width; j++) {
-        $(`#row${i}`).append('<td></td>');
+        $(`#width${i}`).append('<td></td>');
       }
      }
   
